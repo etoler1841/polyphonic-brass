@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Polyphonic Brass`,
     description: `The home of the Polyphonic Brass, Pensacola, FL`,
-    author: `@etoler1841`
+    author: `Eric Toler <etoler1841@gmail.com>`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,6 +26,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
-    }
+    },
+    `gatsby-plugin-sass`
   ]
 }
