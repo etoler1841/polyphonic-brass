@@ -1,5 +1,4 @@
 import React from 'react'
-import './navbar.scss'
 
 const NavBar = () => {
   const nav = [
@@ -22,7 +21,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className="navbar">
+    <div className="navbar">
       <ul className="navbar-nav">
         {nav.map(navItem => (
           <li className="nav-item" key={navItem.url}>
@@ -32,7 +31,7 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   )
 }
 

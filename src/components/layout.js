@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import NavBar from './navbar'
-import './layout.css'
+import '../css/style.scss'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,20 +29,15 @@ const Layout = ({ children }) => {
       <div style={{ minHeight: '100vh', marginBottom: -50 }}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <NavBar />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0
-          }}
-        >
+        <div className="content">
           <main>{children}</main>
         </div>
       </div>
-      <footer style={{ marginLeft: 50 }}>
-        Copyright &copy; {new Date().getFullYear()}{' '}
-        <a href="mailto:polyphonicbrass@gmail.com">Polyphonic Brass</a>
+      <footer className="footer">
+        <p>
+          Copyright &copy; {new Date().getFullYear()}{' '}
+          <a href="mailto:polyphonicbrass@gmail.com">Polyphonic Brass</a>
+        </p>
       </footer>
     </>
   )

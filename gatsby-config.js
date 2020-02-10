@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/bios`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/fonts`
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -35,6 +42,13 @@ module.exports = {
         icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`magra:400,700`],
+        display: 'swap'
+      }
+    }
   ]
 }
