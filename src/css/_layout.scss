@@ -14,6 +14,19 @@
   max-width: $maxContentWidth;
   padding: 0 1.1rem;
   z-index: 0;
+
+  .two-column-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > * {
+      padding: 1rem;
+    }
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .footer {

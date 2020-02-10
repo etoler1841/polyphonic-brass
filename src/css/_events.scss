@@ -1,4 +1,8 @@
 .events {
+  a {
+    text-decoration: none;
+  }
+
   h4 {
     margin-bottom: 0.7em;
   }
@@ -8,7 +12,6 @@
 
     list-style: none;
     border-bottom: $eventBorder;
-    width: 50%;
 
     .event {
       background: $backgroundColor;
@@ -17,23 +20,19 @@
       border-top: $eventBorder;
       padding: 0.7rem 1rem;
 
-      > * {
+      * {
         background: transparent;
       }
 
       .event-date-time {
         font-weight: bold;
-        color: lighten($primaryColor, 50);
+        color: lighten($primaryColor, 20);
       }
 
       .event-location,
       .event-title {
         margin-left: 0.5rem;
-      }
-
-      .event-location {
-        background: transparent;
-        color: $secondaryColor;
+        color: $textColor;
       }
     }
   }

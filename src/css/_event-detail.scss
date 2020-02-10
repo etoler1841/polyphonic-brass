@@ -1,0 +1,32 @@
+.event-detail-wrapper {
+  padding: 1rem;
+
+  .event-detail {
+    margin-top: 2rem;
+    background: $backgroundColor;
+    box-shadow: 3px 3px 10px lighten($backgroundColor, 5);
+
+    * {
+      background: transparent;
+    }
+
+    .event-detail-header {
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.4rem;
+        color: lighten($primaryColor, 20);
+        margin: 0 autos;
+      }
+
+      h4 {
+        color: lighten($primaryColor, 55);
+        margin-left: 0.5rem;
+      }
+    }
+
+    .event-detail-content {
+      padding: 1rem;
+    }
+  }
+}
