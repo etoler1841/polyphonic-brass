@@ -18,11 +18,11 @@ const BioTemplate = ({ data }) => {
         description={`Learn more about ${frontmatter.title}, ${frontmatter.instrument} player for the Polyphonic Brass.`}
       />
       <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.instrument}</h2>
-        <div style={{ maxWidth: 350 }}>
+        <div className="profile-photo">
           <Image fluid={frontmatter.photo.childImageSharp.fluid} />
         </div>
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.instrument}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>

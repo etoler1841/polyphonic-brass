@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $baseFont;
+  background: $contentBackgroundColor;
+  color: $textColor;
+}
+
+.content {
+  margin: 1.45rem auto 0;
+  max-width: $maxContentWidth;
+  padding: 0 1.1rem;
+  z-index: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.8rem;
+  background: $backgroundColor;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -3px 10px lighten($backgroundColor, 10);
+
+  p {
+    margin: 0;
+  }
+}
+
+p {
+  margin-top: 0.3em;
+  margin-bottom: 0.9em;
+}

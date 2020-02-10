@@ -1,16 +1,20 @@
 .navbar {
   width: 100%;
-  background: #eee;
+  background: $primaryColor;
+  box-shadow: 0 -2px 10px darken($primaryColor, 10),
+    0 5px 10px darken($primaryColor, 70);
+  z-index: 100;
 }
 
 .navbar-nav {
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+  max-width: $maxContentWidth;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
+  background: inherit;
 }
 
 .nav-item {
@@ -19,17 +23,18 @@
   margin: 0;
   padding: 0.5rem 1rem;
   width: 25%;
-  color: #333;
-  background: transparent;
-  transition: all 0.2s ease;
+  color: $textColor;
+  background: inherit;
+  transition: all 0.25s ease;
 }
 
 .nav-item:hover {
-  color: white;
-  background: #0052a4;
+  color: lighten($primaryColor, 20);
+  background: $backgroundColor;
 }
 
 .nav-link {
+  background: inherit;
   color: inherit;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

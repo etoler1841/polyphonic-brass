@@ -1,0 +1,23 @@
+header {
+  background: $backgroundColor;
+}
+
+.header-content {
+  background: inherit;
+  margin: 0 auto;
+  max-width: $maxContentWidth;
+  padding: 2.45rem 1.1rem;
+
+  h1 {
+    background: inherit;
+    margin: 0;
+    font-size: $headerFontSize;
+  }
+
+  a {
+    font-family: $headerFont;
+    background: inherit;
+    color: $accentColor;
+    text-decoration: none;
+  }
+}

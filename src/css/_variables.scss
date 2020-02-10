@@ -1,0 +1,19 @@
+// Colors
+$primaryColor: #0052a4;
+$secondaryColor: #eeeeff;
+$accentColor: white;
+$textColor: white;
+$bodyColor: #222;
+$backgroundColor: black;
+$contentBackgroundColor: lighten($backgroundColor, 8);
+
+// Sizing
+$maxContentWidth: 960px;
+$phone: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$headerFontSize: 3.5rem;
+
+// Fonts
+$baseFont: Magra, Tahoma, Arial, sans-serif;
+$headerFont: Blackjack;

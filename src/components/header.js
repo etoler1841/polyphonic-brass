@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './header.scss'
-
 import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
