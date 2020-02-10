@@ -1,0 +1,40 @@
+.events {
+  h4 {
+    margin-bottom: 0.7em;
+  }
+
+  ul {
+    $eventBorder: 1px solid $accentColor;
+
+    list-style: none;
+    border-bottom: $eventBorder;
+    width: 50%;
+
+    .event {
+      background: $backgroundColor;
+      display: flex;
+      flex-direction: column;
+      border-top: $eventBorder;
+      padding: 0.7rem 1rem;
+
+      > * {
+        background: transparent;
+      }
+
+      .event-date-time {
+        font-weight: bold;
+        color: lighten($primaryColor, 50);
+      }
+
+      .event-location,
+      .event-title {
+        margin-left: 0.5rem;
+      }
+
+      .event-location {
+        background: transparent;
+        color: $secondaryColor;
+      }
+    }
+  }
+}

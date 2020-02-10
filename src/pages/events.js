@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Events from '../components/events'
 
 const EventsPage = () => (
   <Layout>
@@ -11,7 +12,7 @@ const EventsPage = () => (
       description="Upcoming engagements for the Polyphonic Brass."
     />
     {/* Hero image/slider */}
-    {/* Upcoming Events */}
+    <Events />
   </Layout>
 )
 

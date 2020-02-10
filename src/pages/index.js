@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Events from '../components/events'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -11,8 +12,8 @@ const IndexPage = () => (
       description="The Polyphonic Brass are a brass quintet based in Pensacola, FL."
     />
     {/* Hero image/slider */}
-    {/* Upcoming Events | Blog Posts */}
-    {/* Contact Info */}
+    <Events />
+    {/* Blog Posts */}
   </Layout>
 )
 
