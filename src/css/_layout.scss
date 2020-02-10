@@ -10,21 +10,29 @@
 }
 
 .content {
-  margin: 1.45rem auto 0;
+  margin: 0 auto;
   max-width: $maxContentWidth;
   padding: 0 1.1rem;
-  z-index: 0;
 
-  .two-column-display {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  main {
+    margin-top: 2rem;
 
-    > * {
-      padding: 1rem;
+    .two-column-display {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      > * {
+        padding: 1rem;
+      }
+
+      @media (max-width: $tablet) {
+        grid-template-columns: 1fr;
+      }
     }
 
-    @media (max-width: $tablet) {
-      grid-template-columns: 1fr;
+    p {
+      margin-top: 0.3em;
+      margin-bottom: 0.9em;
     }
   }
 }
@@ -44,9 +52,4 @@
   p {
     margin: 0;
   }
-}
-
-p {
-  margin-top: 0.3em;
-  margin-bottom: 0.9em;
 }
