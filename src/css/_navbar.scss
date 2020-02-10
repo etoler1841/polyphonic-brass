@@ -18,6 +18,7 @@
 }
 
 .nav-item {
+  position: relative;
   text-align: center;
   list-style: none;
   margin: 0;
@@ -25,12 +26,29 @@
   width: 25%;
   color: $textColor;
   background: inherit;
-  transition: all 0.25s ease;
+  transition: all 0.25s ease-in-out;
+
+  .collapse {
+    text-align: left;
+    position: absolute;
+    top: 2.75rem;
+    left: 0rem;
+    transform: scaleY(0);
+    overflow: hidden;
+    transition: transform 0.25s ease-out;
+    transform-origin: top;
+    width: 100%;
+    box-shadow: 3px 3px 5px lighten($backgroundColor, 5);
+  }
 }
 
 .nav-item:hover {
   color: lighten($primaryColor, 20);
   background: $backgroundColor;
+
+  .collapse {
+    transform: scaleY(1);
+  }
 }
 
 .nav-link {

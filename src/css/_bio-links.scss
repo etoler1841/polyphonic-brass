@@ -1,0 +1,14 @@
+.bio-links {
+  background: $backgroundColor;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  .bio-link {
+    background: transparent;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

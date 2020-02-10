@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `bios`,
-        path: `${__dirname}/src/bios`
+        name: `content`,
+        path: `${__dirname}/src/content`
       }
     },
     {

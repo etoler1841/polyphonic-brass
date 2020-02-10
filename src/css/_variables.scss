@@ -1,13 +1,13 @@
 // Colors
 $primaryColor: #6500c4;
-// $primaryColor: #880054;
-// $primaryColor: #a81900;
+$primaryColor: #880054;
+$primaryColor: #a81900;
 // $primaryColor: #d47f00;
 // $primaryColor: #b5b800;
 // $primaryColor: #3a8f01;
 // $primaryColor: #00a7c4;
 // $primaryColor: #0052a4;
-$secondaryColor: #ddddff;
+$secondaryColor: lighten($primaryColor, 57);
 $accentColor: white;
 $textColor: white;
 $bodyColor: #222;

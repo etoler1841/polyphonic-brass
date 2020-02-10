@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import BioLinks from './bio-links'
 
 const NavBar = () => {
   const nav = [
@@ -8,7 +10,8 @@ const NavBar = () => {
     },
     {
       url: '/about',
-      title: 'About'
+      title: 'About',
+      child: <BioLinks />
     },
     {
       url: '/events',
@@ -25,9 +28,10 @@ const NavBar = () => {
       <ul className="navbar-nav">
         {nav.map(navItem => (
           <li className="nav-item" key={navItem.url}>
-            <a className="nav-link" href={navItem.url}>
+            <Link className="nav-link" to={navItem.url}>
               {navItem.title}
-            </a>
+            </Link>
+            <div className="collapse">{navItem.child}</div>
           </li>
         ))}
       </ul>
