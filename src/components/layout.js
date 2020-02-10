@@ -1,11 +1,12 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
+import Image from 'gatsby-image'
 import Header from './header'
 import NavBar from './navbar'
 import '../css/style.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, fluidHeroData }) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -22,6 +23,9 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <NavBar />
         <div className="content">
+          {fluidHeroData && (
+            <Image className="hero-img" fluid={fluidHeroData} />
+          )}
           <main>{children}</main>
         </div>
       </div>

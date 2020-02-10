@@ -10,43 +10,46 @@
 }
 
 .content {
-  margin: 1.45rem auto 0;
+  margin: 0 auto;
   max-width: $maxContentWidth;
   padding: 0 1.1rem;
-  z-index: 0;
 
-  .two-column-display {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  main {
+    margin-top: 2rem;
 
-    > * {
-      padding: 1rem;
+    .two-column-display {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      > * {
+        padding: 1rem;
+      }
+
+      @media (max-width: $tablet) {
+        grid-template-columns: 1fr;
+      }
     }
 
-    @media (max-width: $tablet) {
-      grid-template-columns: 1fr;
+    p {
+      margin-top: 0.3em;
+      margin-bottom: 0.9em;
     }
   }
-}
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.8rem;
-  background: $backgroundColor;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -3px 10px lighten($backgroundColor, 10);
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.8rem;
+    background: $backgroundColor;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 10px lighten($backgroundColor, 10);
 
-  p {
-    margin: 0;
+    p {
+      margin: 0;
+    }
   }
-}
-
-p {
-  margin-top: 0.3em;
-  margin-bottom: 0.9em;
 }
