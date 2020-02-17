@@ -10,5 +10,9 @@
     padding: 1rem;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      color: var(--primary-color-light);
+    }
   }
 }

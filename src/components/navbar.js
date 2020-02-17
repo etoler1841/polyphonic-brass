@@ -25,18 +25,20 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <ul className="navbar-nav">
-        {nav.map(navItem => (
-          <li className="nav-item" key={navItem.url}>
-            {navItem.url ? (
+        {nav.map(navItem =>
+          navItem.url ? (
+            <li className="nav-item" key={navItem.url}>
               <Link to={navItem.url}>
                 <div className="nav-link">{navItem.title}</div>
               </Link>
-            ) : (
-              <div className="nav-link">{navItem.title}</div>
-            )}
-            <div className="collapse">{navItem.child}</div>
-          </li>
-        ))}
+            </li>
+          ) : (
+            <li className="nav-item nav-link">
+              {navItem.title}
+              <div className="collapse">{navItem.child}</div>
+            </li>
+          )
+        )}
       </ul>
     </div>
   )

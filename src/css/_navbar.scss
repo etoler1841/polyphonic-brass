@@ -18,7 +18,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
-  background: inherit;
+  background: transparent;
 }
 
 .nav-item {
@@ -26,10 +26,9 @@
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 1rem;
   width: 25%;
   color: var(--nav-text-color);
-  background: inherit;
+  background: transparent;
   transition: all var(--transition-time) ease-in-out;
 
   .collapse {
@@ -44,27 +43,36 @@
     width: 100%;
     box-shadow: 3px 3px 5px lighten($backgroundColor, 5);
   }
-}
 
-.nav-item:hover {
-  color: var(--primary-color-light);
-  background: $backgroundColor;
+  > * {
+    width: 100%;
+  }
 
-  .collapse {
-    transform: scaleY(1);
+  &:hover {
+    background: $backgroundColor;
+    color: var(--primary-color-light);
+
+    .collapse {
+      transform: scaleY(1);
+    }
   }
 }
 
+.collapse {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
 .nav-link {
-  background: transparent;
-  color: inherit;
+  background: none;
+  color: var(--nav-text-color);
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
   height: 100%;
-  width: 100%;
+  padding: 0.5rem 1rem;
 }
 
 .nav-divider {
