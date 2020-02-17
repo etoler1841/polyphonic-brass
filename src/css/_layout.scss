@@ -9,6 +9,15 @@
   color: $textColor;
 }
 
+html {
+  background: $backgroundColor;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 71px);
+  margin-bottom: 20px;
+}
+
 .content {
   margin: 0 auto;
   max-width: $maxContentWidth;
@@ -44,12 +53,26 @@
   align-items: center;
   padding: 0.8rem;
   background: $backgroundColor;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
   box-shadow: 0 -3px 10px lighten($backgroundColor, 10);
 
   p {
+    background: transparent;
     margin: 0;
+  }
+
+  a {
+    background: inherit;
+  }
+
+  ::after {
+    content: '';
+    position: relative;
+    display: block;
+    background: inherit;
+    height: 3px;
+    overflow: hidden;
   }
 }

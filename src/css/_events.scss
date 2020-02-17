@@ -20,6 +20,10 @@
       border-top: $eventBorder;
       padding: 0.7rem 1rem;
 
+      &.active {
+        background: lighten($backgroundColor, 15);
+      }
+
       * {
         background: transparent;
       }

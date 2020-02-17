@@ -19,7 +19,7 @@ const Layout = ({ children, fluidHeroData }) => {
 
   return (
     <>
-      <div style={{ minHeight: '100vh', marginBottom: -50 }}>
+      <div className="content-wrapper">
         <Header siteTitle={data.site.siteMetadata.title} />
         <NavBar />
         <div className="content">

@@ -22,8 +22,16 @@ const BioLinks = () => {
 
   return (
     <div className="bio-links">
+      <Link className="bio-link" to={'/about'}>
+        Polyphonic Brass
+      </Link>
+      <div className="nav-divider" />
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Link className="bio-link" to={node.frontmatter.path}>
+        <Link
+          key={node.frontmatter.path}
+          className="bio-link"
+          to={node.frontmatter.path}
+        >
           {node.frontmatter.title}
         </Link>
       ))}
