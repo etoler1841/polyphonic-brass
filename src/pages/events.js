@@ -13,10 +13,7 @@ import Events from '../components/events'
 import EventDetail from '../components/event-detail'
 
 const EventsPage = () => {
-  const eventID =
-    typeof window !== 'undefined'
-      ? parseInt(useQueryParam('event', events[0].id))
-      : events[0].id
+  const eventID = parseInt(useQueryParam('event', events[0].id))
   const focusedEvent = events.find(event => event.id === eventID)
 
   return (

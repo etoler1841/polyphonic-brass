@@ -9,7 +9,6 @@ const NavBar = () => {
       title: 'Home'
     },
     {
-      url: '/about',
       title: 'About',
       child: <BioLinks />
     },
@@ -28,9 +27,13 @@ const NavBar = () => {
       <ul className="navbar-nav">
         {nav.map(navItem => (
           <li className="nav-item" key={navItem.url}>
-            <Link className="nav-link" to={navItem.url}>
-              {navItem.title}
-            </Link>
+            {navItem.url ? (
+              <Link to={navItem.url}>
+                <div className="nav-link">{navItem.title}</div>
+              </Link>
+            ) : (
+              <div className="nav-link">{navItem.title}</div>
+            )}
             <div className="collapse">{navItem.child}</div>
           </li>
         ))}
