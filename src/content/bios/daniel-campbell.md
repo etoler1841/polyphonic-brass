@@ -4,6 +4,7 @@ title: 'Daniel Campbell'
 instrument: 'Trumpet'
 photo: '../../images/photo-placeholder.jpg'
 sortOrder: 1
+tags: ['bio']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis. Vitae semper quis lectus nulla. Turpis massa tincidunt dui ut ornare lectus sit. Vivamus at augue eget arcu dictum. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Egestas sed sed risus pretium quam vulputate. Bibendum ut tristique et egestas quis. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Ornare massa eget egestas purus viverra accumsan. Aliquam sem et tortor consequat id. Et netus et malesuada fames ac turpis egestas sed tempus. Euismod nisi porta lorem mollis aliquam ut. Ornare arcu odio ut sem.

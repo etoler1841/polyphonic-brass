@@ -5,7 +5,7 @@ const BioLinks = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { path: { regex: "/bio/" } } }
+        filter: { frontmatter: { tags: { eq: "bio" } } }
         sort: { fields: frontmatter___sortOrder, order: ASC }
       ) {
         edges {

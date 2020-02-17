@@ -4,6 +4,7 @@ title: 'Gene Belser'
 instrument: 'Trombone'
 photo: '../../images/photo-placeholder.jpg'
 sortOrder: 4
+tags: ['bio']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Volutpat sed cras ornare arcu dui. Congue quisque egestas diam in arcu cursus. Sapien nec sagittis aliquam malesuada. Felis bibendum ut tristique et egestas quis. Amet aliquam id diam maecenas. Lacinia at quis risus sed vulputate odio ut enim. Aenean vel elit scelerisque mauris pellentesque. Nibh nisl condimentum id venenatis.

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { useQueryParam } from 'gatsby-query-params'
 
-const Events = ({ events }) => {
+const Events = ({ events, highlightActive }) => {
   const activeEventID = parseInt(useQueryParam('event') || events[0].id)
 
   return (
@@ -13,7 +13,9 @@ const Events = ({ events }) => {
           <li key={event.id}>
             <Link to={`/events?event=${event.id}`}>
               <div
-                className={`event ${activeEventID === event.id && 'active'}`}
+                className={`event ${highlightActive &&
+                  activeEventID === event.id &&
+                  'active'}`}
               >
                 <span className="event-date-time">
                   {event.date} - {event.time}

@@ -25,7 +25,7 @@ const EventsPage = () => {
       />
       {/* Hero image/slider */}
       <div className="two-column-display">
-        <Events events={events} />
+        <Events events={events} highlightActive />
         <EventDetail event={focusedEvent} />
       </div>
     </Layout>

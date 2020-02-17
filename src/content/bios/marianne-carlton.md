@@ -4,6 +4,7 @@ title: 'Marianne Carlton'
 instrument: 'F Horn'
 photo: '../../images/photo-placeholder.jpg'
 sortOrder: 3
+tags: ['bio']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum fusce ut placerat orci nulla pellentesque. Fames ac turpis egestas sed tempus urna. Gravida dictum fusce ut placerat orci. Sem et tortor consequat id porta nibh venenatis. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. In est ante in nibh mauris cursus mattis. Dictumst quisque sagittis purus sit amet. Ac turpis egestas sed tempus urna. Fermentum odio eu feugiat pretium nibh ipsum. Ornare massa eget egestas purus viverra accumsan.

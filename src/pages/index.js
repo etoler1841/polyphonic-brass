@@ -1,8 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Image from 'gatsby-image'
-
 /**
  * These are placeholder events. This will ultimately read
  * from Google's Calendar API.
@@ -10,11 +8,12 @@ import Image from 'gatsby-image'
 import events from '../content/events'
 
 import Events from '../components/events'
+import NewsFeed from '../components/news-feed'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const IndexPage = () => {
-  const { file } = useStaticQuery(graphql`
+  const { file, articles } = useStaticQuery(graphql`
     {
       file(relativePath: { eq: "hero-main.png" }) {
         childImageSharp {
@@ -24,6 +23,20 @@ const IndexPage = () => {
             src
             srcSet
             sizes
+          }
+        }
+      }
+      articles: allMarkdownRemark(
+        filter: { frontmatter: { tags: { eq: "article" } } }
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            excerpt
+            frontmatter {
+              title
+              date
+            }
           }
         }
       }
@@ -37,8 +50,10 @@ const IndexPage = () => {
         lang="en"
         description="The Polyphonic Brass are a brass quintet based in Pensacola, FL."
       />
-      <Events events={events} />
-      {/* Blog Posts */}
+      <div className="two-column-display">
+        <Events events={events} />
+        <NewsFeed articles={articles.edges} />
+      </div>
     </Layout>
   )
 }

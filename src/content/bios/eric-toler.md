@@ -4,6 +4,7 @@ title: 'Eric Toler'
 instrument: 'Trumpet'
 photo: '../../images/photo-placeholder.jpg'
 sortOrder: 2
+tags: ['bio']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque. Ut eu sem integer vitae justo eget magna fermentum. Vitae turpis massa sed elementum tempus egestas. Habitasse platea dictumst quisque sagittis purus sit. Faucibus ornare suspendisse sed nisi lacus. Arcu ac tortor dignissim convallis aenean et tortor at. Ut placerat orci nulla pellentesque dignissim enim sit. Arcu odio ut sem nulla. Semper eget duis at tellus at urna. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Est placerat in egestas erat imperdiet sed euismod nisi. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros.
