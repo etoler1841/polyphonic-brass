@@ -32,10 +32,12 @@ const IndexPage = () => {
       ) {
         edges {
           node {
+            id
             excerpt
             frontmatter {
               title
               date
+              author
             }
           }
         }

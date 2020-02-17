@@ -21,11 +21,17 @@ const NewsFeed = ({ articles }) => {
 
           return (
             <li key={node.id}>
-              <div className="article-item">
-                <span className="article-title">{node.title}</span>
-                <span className="article-date">{node.date}</span>
+              <div className="article">
+                <Link className="article-title" to={path}>
+                  {node.frontmatter.title}
+                </Link>
+                <span className="article-date-author">
+                  Posted {node.frontmatter.date} by {node.frontmatter.author}
+                </span>
                 <span className="article-preview">{node.excerpt}</span>
-                <Link to={path}>Read more...</Link>
+                <Link className="article-link" to={path}>
+                  Read more...
+                </Link>
               </div>
             </li>
           )

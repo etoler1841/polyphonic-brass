@@ -1,0 +1,48 @@
+.news {
+  h4 {
+    margin-bottom: 0.7em;
+  }
+
+  ul {
+    $articleBorder: 1px solid $accentColor;
+
+    list-style: none;
+    border-bottom: $articleBorder;
+
+    .article {
+      background: $backgroundColor;
+      display: flex;
+      flex-direction: column;
+      border-top: $articleBorder;
+      padding: 0.7rem 1rem;
+
+      * {
+        background: transparent;
+      }
+
+      .article-title {
+        font-weight: bold;
+        color: lighten($primaryColor, 20);
+        text-decoration: none;
+      }
+
+      .article-date-author,
+      .article-preview {
+        margin-left: 0.5rem;
+        color: $textColor;
+      }
+
+      .article-date-author {
+        color: darken($accentColor, 20);
+        font-size: 0.9em;
+        margin-bottom: 0.3em;
+      }
+
+      .article-link {
+        text-decoration: underline;
+        font-size: 0.9em;
+        margin-left: auto;
+      }
+    }
+  }
+}
