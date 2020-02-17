@@ -12,7 +12,6 @@ const AboutUsPage = () => {
       }
     }
   `)
-  console.log(data)
 
   return (
     <Layout>

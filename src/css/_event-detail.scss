@@ -15,12 +15,12 @@
 
       h3 {
         font-size: 1.4rem;
-        color: lighten($primaryColor, 20);
-        margin: 0 autos;
+        color: var(--primary-color-light);
+        margin: 0 auto;
       }
 
       h4 {
-        color: lighten($primaryColor, 55);
+        color: var(--primary-color-lightest);
         margin-left: 0.5rem;
       }
     }

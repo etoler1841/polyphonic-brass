@@ -1,8 +1,8 @@
 .navbar {
   position: relative;
   width: 100%;
-  background: $primaryColor;
-  box-shadow: 0 -2px 10px darken($primaryColor, 10), 0 5px 10px black;
+  background: var(--primary-color);
+  box-shadow: 0 -2px 10px var(--primary-color-dark), 0 5px 10px black;
   z-index: 100;
 }
 
@@ -24,9 +24,9 @@
   margin: 0;
   padding: 0.5rem 1rem;
   width: 25%;
-  color: $textColor;
+  color: var(--nav-text-color);
   background: inherit;
-  transition: all 0.25s ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
 
   .collapse {
     text-align: left;
@@ -35,7 +35,7 @@
     left: 0rem;
     transform: scaleY(0);
     overflow: hidden;
-    transition: transform 0.25s ease-out;
+    transition: transform var(--transition-time) ease-out;
     transform-origin: top;
     width: 100%;
     box-shadow: 3px 3px 5px lighten($backgroundColor, 5);
@@ -43,7 +43,7 @@
 }
 
 .nav-item:hover {
-  color: lighten($primaryColor, 20);
+  color: var(--primary-color-light);
   background: $backgroundColor;
 
   .collapse {

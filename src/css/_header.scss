@@ -17,7 +17,7 @@ header {
   a {
     font-family: $headerFont;
     background: inherit;
-    color: $accentColor;
+    color: var(--accent-color);
     text-decoration: none;
   }
 }

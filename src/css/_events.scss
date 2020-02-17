@@ -8,7 +8,7 @@
   }
 
   ul {
-    $eventBorder: 1px solid $accentColor;
+    $eventBorder: 1px solid var(--accent-color);
 
     list-style: none;
     border-bottom: $eventBorder;
@@ -30,13 +30,13 @@
 
       .event-date-time {
         font-weight: bold;
-        color: lighten($primaryColor, 20);
+        color: var(--primary-color-light);
       }
 
       .event-location,
       .event-title {
         margin-left: 0.5rem;
-        color: $textColor;
+        color: var(--body-text-color);
       }
     }
   }

@@ -3,7 +3,10 @@ import { Link } from 'gatsby'
 import { useQueryParam } from 'gatsby-query-params'
 
 const Events = ({ events, highlightActive }) => {
-  const activeEventID = parseInt(useQueryParam('event') || events[0].id)
+  const activeEventID =
+    typeof window !== 'undefined'
+      ? parseInt(useQueryParam('event', events[0].id))
+      : events[0].id
 
   return (
     <div className="events">

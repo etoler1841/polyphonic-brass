@@ -1,15 +1,19 @@
+html {
+  --primary-color: hsl(0, 0%, 40%);
+  --primary-color-dark: hsl(0, 0%, 30%);
+  --primary-color-darker: hsl(0, 0%, 20%);
+  --primary-color-darkest: hsl(0, 0%, 10%);
+  --primary-color-light: hsl(0, 0%, 55%);
+  --primary-color-lighter: hsl(0, 0%, 75%);
+  --primary-color-lightest: hsl(0, 0%, 90%);
+  --accent-color: white;
+  --accent-color-dark: #ccc;
+  --nav-text-color: white;
+  --body-text-color: white;
+  --transition-time: 0s;
+}
+
 // Colors
-$primaryColor: #6500c4;
-// $primaryColor: #880054;
-// $primaryColor: #a81900;
-// $primaryColor: #d47f00;
-// $primaryColor: #b5b800;
-// $primaryColor: #3a8f01;
-// $primaryColor: #00a7c4;
-$primaryColor: #0052a4;
-$secondaryColor: lighten($primaryColor, 57);
-$accentColor: white;
-$textColor: white;
 $bodyColor: #222;
 $backgroundColor: black;
 $contentBackgroundColor: lighten($backgroundColor, 8);

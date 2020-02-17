@@ -4,7 +4,7 @@
   }
 
   ul {
-    $articleBorder: 1px solid $accentColor;
+    $articleBorder: 1px solid var(--accent-color);
 
     list-style: none;
     border-bottom: $articleBorder;
@@ -22,18 +22,18 @@
 
       .article-title {
         font-weight: bold;
-        color: lighten($primaryColor, 20);
+        color: var(--primary-color-light);
         text-decoration: none;
       }
 
       .article-date-author,
       .article-preview {
         margin-left: 0.5rem;
-        color: $textColor;
+        color: var(--body-text-color);
       }
 
       .article-date-author {
-        color: darken($accentColor, 20);
+        color: var(--accent-color-dark);
         font-size: 0.9em;
         margin-bottom: 0.3em;
       }
