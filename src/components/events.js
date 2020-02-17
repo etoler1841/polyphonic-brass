@@ -1,9 +1,23 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useQueryParam } from 'gatsby-query-params'
 
 const Events = ({ events, highlightActive }) => {
-  const activeEventID = parseInt(useQueryParam('event', events[0].id))
+  const buildLinkClasses = (
+    { href, location: { pathname, search } },
+    event
+  ) => {
+    let className = 'event'
+
+    if (highlightActive && !search) {
+      if (event.id === events[0].id) className += ' active'
+    } else {
+      if (href === `${pathname}${search}`) className += ' active'
+    }
+
+    return {
+      className
+    }
+  }
 
   return (
     <div className="events">
@@ -11,18 +25,15 @@ const Events = ({ events, highlightActive }) => {
       <ul>
         {events.map(event => (
           <li key={event.id}>
-            <Link to={`/events?event=${event.id}`}>
-              <div
-                className={`event ${highlightActive &&
-                  activeEventID === event.id &&
-                  'active'}`}
-              >
-                <span className="event-date-time">
-                  {event.date} - {event.time}
-                </span>
-                <span className="event-title">{event.title}</span>
-                <span className="event-location">{event.location}</span>
-              </div>
+            <Link
+              to={`/events?event=${event.id}`}
+              getProps={props => buildLinkClasses(props, event)}
+            >
+              <span className="event-date-time">
+                {event.date} - {event.time}
+              </span>
+              <span className="event-title">{event.title}</span>
+              <span className="event-location">{event.location}</span>
             </Link>
           </li>
         ))}

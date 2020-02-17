@@ -1,5 +1,4 @@
 import React from 'react'
-import { useQueryParam } from 'gatsby-query-params'
 
 /**
  * These are placeholder events. This will ultimately read
@@ -13,7 +12,7 @@ import Events from '../components/events'
 import EventDetail from '../components/event-detail'
 
 const EventsPage = () => {
-  const eventID = parseInt(useQueryParam('event', events[0].id))
+  const eventID = getCurrentEvent()
   const focusedEvent = events.find(event => event.id === eventID)
 
   return (
@@ -30,6 +29,17 @@ const EventsPage = () => {
       </div>
     </Layout>
   )
+}
+
+const getCurrentEvent = () => {
+  if (typeof window === 'undefined') return events[0].id
+  const { search } = window.location
+  const matches = search.match(/event=(\d+)/)
+  if (matches) {
+    return parseInt(matches[1])
+  } else {
+    return events[0].id
+  }
 }
 
 export default EventsPage
